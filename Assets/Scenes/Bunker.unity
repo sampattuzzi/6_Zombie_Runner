@@ -285,18 +285,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &99966302 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5341549449817193396, guid: 366758fbb394d5649a6b423f51848e98,
-    type: 3}
-  m_PrefabInstance: {fileID: 1438546690}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207705807fe3bca4ab572a5a732a3b1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &107544416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 478342, guid: ae34ae2cca6f6cf469ed2c07f221f483,
@@ -399,6 +387,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1438546690}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &139192605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8236100241299101932, guid: 366758fbb394d5649a6b423f51848e98,
+    type: 3}
+  m_PrefabInstance: {fileID: 1438546690}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139192604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207705807fe3bca4ab572a5a732a3b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &139192610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17469,7 +17469,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 99966302}
+      objectReference: {fileID: 139192605}
     - target: {fileID: 2596158850591731192, guid: 366758fbb394d5649a6b423f51848e98,
         type: 3}
       propertyPath: damage
@@ -17560,7 +17560,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 855951042706720176}
+      objectReference: {fileID: 139192605}
     - target: {fileID: 3081999877318300285, guid: 366758fbb394d5649a6b423f51848e98,
         type: 3}
       propertyPath: ammoText
@@ -17651,7 +17651,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 855951042706720176}
+      objectReference: {fileID: 139192605}
     - target: {fileID: 3393661727077191739, guid: 366758fbb394d5649a6b423f51848e98,
         type: 3}
       propertyPath: ammoText
@@ -21447,18 +21447,6 @@ PrefabInstance:
       objectReference: {fileID: 1999546308}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c136eeb6c60ccc3428233224e7864c67, type: 3}
---- !u!114 &855951042706720176 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 855951042706720176, guid: 366758fbb394d5649a6b423f51848e98,
-    type: 3}
-  m_PrefabInstance: {fileID: 1438546690}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207705807fe3bca4ab572a5a732a3b1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2337074158710820783 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2337074158710820783, guid: 366758fbb394d5649a6b423f51848e98,
@@ -21482,7 +21470,8 @@ MonoBehaviour:
   FPCamera: {fileID: 1079756946}
   hitImpactVFX: {fileID: 6765343681684199234, guid: 80c69c65a69723c4f88a73b134796d73,
     type: 3}
-  ammoSlot: {fileID: 99966302}
+  ammoSlot: {fileID: 0}
+  ammoType: 0
   ammoText: {fileID: 40201469}
 --- !u!1001 &2517382359918465286
 PrefabInstance:
@@ -21659,7 +21648,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 855951042706720176}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1db00e065d08b4ebb2fcc0abee5366, type: 3}
 --- !u!198 &4643785076589420747 stripped
@@ -21899,6 +21888,6 @@ PrefabInstance:
         type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 99966302}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ba9025898d1db64384eb08b913c08d7, type: 3}

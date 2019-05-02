@@ -8,11 +8,19 @@ using UnityEngine;
 
 public class Ammo : MonoBehaviour
 {
-    [SerializeField] int[] currentAmmo = {10, 0, 0};
+    [SerializeField] Mapping[] currentAmmo = {default(Mapping), default(Mapping), default(Mapping) };
+
+    [System.Serializable]
+    class Mapping
+    {
+        public AmmoType type;
+        public int ammo;
+    }
 
     public int GetCurrentAmmo(AmmoType type)
     {
-        return currentAmmo[(int)type];
+        Mapping mapping = GetMappingForType(type);
+        return mapping.ammo;
     }
 
     public void ReduceAmmo(AmmoType type)
@@ -26,12 +34,21 @@ public class Ammo : MonoBehaviour
         }
         else
         {
-            currentAmmo[(int)type] --;
+            GetMappingForType(type).ammo --;
         }
     }
 
     public void IncreaseAmmo(AmmoType type, int ammoAmount)
     {
-        currentAmmo[(int)type] += ammoAmount;
+        GetMappingForType(type).ammo += ammoAmount;
+    }
+
+    private Mapping GetMappingForType(AmmoType type)
+    {
+        foreach (var item in currentAmmo)
+        {
+            if (item.type == type) return item;
+        }
+        return null;
     }
 }
