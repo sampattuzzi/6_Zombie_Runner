@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class Ammo : MonoBehaviour
 {
-    [SerializeField] Mapping[] currentAmmo = {default(Mapping), default(Mapping), default(Mapping) };
+    [SerializeField] List<Mapping> currentAmmo;
 
     [System.Serializable]
     class Mapping
@@ -49,6 +49,11 @@ public class Ammo : MonoBehaviour
         {
             if (item.type == type) return item;
         }
-        return null;
+
+        var newSlot = new Mapping();
+        newSlot.type = type;
+        currentAmmo.Add(newSlot);
+
+        return newSlot;
     }
 }

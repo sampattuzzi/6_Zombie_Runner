@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 1107469917}
   - component: {fileID: 1107469916}
   - component: {fileID: 8384028058272769235}
-  - component: {fileID: 8236100241299101932}
+  - component: {fileID: 2538748860303314864}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
---- !u!114 &8236100241299101932
+--- !u!114 &2538748860303314864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentAmmo:
   - type: 0
-    ammo: 10
+    ammo: 0
   - type: 1
     ammo: 0
   - type: 2
@@ -455,7 +455,7 @@ MonoBehaviour:
   FPCamera: {fileID: 1079756946}
   hitImpactVFX: {fileID: 6765343681684199234, guid: 80c69c65a69723c4f88a73b134796d73,
     type: 3}
-  ammoSlot: {fileID: 8236100241299101932}
+  ammoSlot: {fileID: 0}
   ammoType: 0
   ammoText: {fileID: 0}
 --- !u!1 &6062081657485137289
@@ -995,7 +995,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 8236100241299101932}
+      objectReference: {fileID: 0}
     - target: {fileID: 3412058378183045585, guid: 88967308e4033ea4e86b0f56ae5a1b2c,
         type: 3}
       propertyPath: muzzleVFX
@@ -1080,7 +1080,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 8236100241299101932}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88967308e4033ea4e86b0f56ae5a1b2c, type: 3}
 --- !u!4 &6531298770490085158 stripped
@@ -1160,7 +1160,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ammoSlot
       value: 
-      objectReference: {fileID: 8236100241299101932}
+      objectReference: {fileID: 0}
     - target: {fileID: 5766955801647864573, guid: 88967308e4033ea4e86b0f56ae5a1b2c,
         type: 3}
       propertyPath: ammoType

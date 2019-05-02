@@ -389,7 +389,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &139192605 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8236100241299101932, guid: 366758fbb394d5649a6b423f51848e98,
+  m_CorrespondingSourceObject: {fileID: 2538748860303314864, guid: 366758fbb394d5649a6b423f51848e98,
     type: 3}
   m_PrefabInstance: {fileID: 1438546690}
   m_PrefabAsset: {fileID: 0}
@@ -17670,6 +17670,26 @@ PrefabInstance:
         type: 3}
       propertyPath: hitPoints
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341430343501916063, guid: 366758fbb394d5649a6b423f51848e98,
+        type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 139192605}
+    - target: {fileID: 7341430343501916063, guid: 366758fbb394d5649a6b423f51848e98,
+        type: 3}
+      propertyPath: ammoText
+      value: 
+      objectReference: {fileID: 40201469}
+    - target: {fileID: 2538748860303314864, guid: 366758fbb394d5649a6b423f51848e98,
+        type: 3}
+      propertyPath: currentAmmo.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538748860303314864, guid: 366758fbb394d5649a6b423f51848e98,
+        type: 3}
+      propertyPath: currentAmmo.Array.data[0].ammo
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366758fbb394d5649a6b423f51848e98, type: 3}
